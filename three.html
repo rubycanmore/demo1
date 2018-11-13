@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html><head><style type="text/css">
+</style></head><body><html>
+
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>bootstrap网页</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 300px;
+            padding: 15px;
+            margin-bottom:60px;
+        }
+        .carousel-inner .item  img{
+            width: 100%;
+        }
+        .container{
+            margin-top:60px;
+        }
+        .container .box img{
+            width: 80px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        @media(min-width: 992px) {
+            .container {
+                width: 940px;
+            }
+        }
+         @media(min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
+         @media(min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
+         @media(min-width: 1700px) {
+            .container {
+                width: 1470px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navber-header">
+                    <a class="navbar-brand" href="#">RWBY</a>
+                    </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span>注册</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>登录</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="myCarousel"  class="carousel slide">
+        <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="http://img4.duitang.com/uploads/blog/201309/20/20130920170312_e4LLT.jpeg" alt="1">
+                    <div class="carousel-caption">"小红帽的逆袭"</div>
+                </div>
+                <div class="item">
+                    <img src="http://cdn.duitang.com/uploads/blog/201309/20/20130920170512_W4PnR.jpeg" alt="2">
+                    <div class="carousel-caption">"小红帽的逆袭"</div>
+                </div>
+                <div class="item">
+                    <img src="https://ww2.sinaimg.cn/large/6a2d6274jw1ea12dpdedmj21gd0th7br.jpg" alt="4">
+                    <div class="carousel-caption">"小红帽的逆袭"</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="box col-lg-2 col-md-3 col-sm-4 col-xs-6 col-lg-offset-2 coi-xs-8 col-xc-offset-2">
+                    <header>
+                        <img src="https://p1.ssl.qhmsg.com/dr/220__/t019180443b7e5d58df.png" alt="">
+                        <p>：ruby rose</p>
+                    </header>
+
+                <p>Ruby Rose（鲁比·洛斯或露比·罗丝），擅长狙击。</p>
+                <p>惯用手：左手，但两只手都能运用自如</p>
+                <p>发色：黑色短发，发梢挑染红色</p>
+                <p>衣服：黑红色哥特式衣裙、黑裤袜和长筒靴，总是随时穿着鲜红色的连帽斗篷。</p>
+                <p>武器：新月玫瑰(Crescent Rose)</p>
+                <p>国籍: 溪谷王国(Vale)</p>
+                <p>外像力：急速（speed）</p>
+                <p>身份：RWBY小队的队长，亦是本作的主角</p>
+            </div>
+
+            <div class="box col-lg-2 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 ">
+                <header>
+                    <img src="https://p1.ssl.qhmsg.com/dr/220__/t01fb6d9cd677dad4bd.png" alt="">
+                    <p>：Weiss Schnee</p>
+                </header>
+
+                <p>Weiss Schnee（魏丝·雪倪），善于使用魔法攻击及剑术。</p>
+                <p>惯用手：左手使用武器，右手发动能力</p>
+                <p>发色：银白</p>
+                <p>衣服：白色过渡到淡蓝的短裙、内测为正红色的立领外套，高跟长筒靴。</p>
+                <p>武器：柳叶白菀(Myrtenaster)</p>
+                <p>国籍：擎天王国(Atlas)</p>
+                <p>外像力：雕文(Glyphs)</p>
+                <p>身份：RWBY队员，雪倪尘晶公司的女继承人</p>
+                </p>
+            </div>
+
+            <div class="box col-lg-2 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                <header>
+                    <img src="https://p1.ssl.qhmsg.com/dr/220__/t015daf3872c6a24d60.png"  alt="">
+                    <p>：Blake Belladonna</p>
+                </header>
+                <p>Blake Belladonna(布蕾克·贝拉多娜)，擅长辅助作战。</p>
+                <p>惯用手：右手</p>
+                <p>发色：黑长卷</p>
+                <p>衣服：黑色高跟鞋、长筒袜，双手缠黑缎带，上身无袖背心燕尾服;下身白色打底裤。</p>
+                <p>武器：跃影飞凌(Gambol Shroud)</p>
+                <p>国籍：无</p>
+                <p>外像力：残影(Shadow)</p>
+                <p>身份；RWBY队员，弗纳人(Faunus)，原"白牙"组织成员</p>
+            </div>
+            <div class="box col-lg-2 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                <header>
+                    <img src="https://p1.ssl.qhmsg.com/dr/220__/t01b378e440c70ef2fa.png"  alt="">
+                    <p>：Yang Xiao long</p>
+                </header>
+                <p>Blake Belladonna(布蕾克·贝拉多娜)，擅长辅助作战。</p>
+                <p>惯用手：右手</p>
+                <p>发色：金色卷发</p>
+                <p>衣服：牛仔风格服装，使用一双能当机关枪射击子弹的拳击手套"E。</p>
+                <p>武器：Ember Celica(灰烬天堂)，拳击，体术。</p>
+                <p>国籍: 溪谷王国(Vale)</p>
+                <p>外像力：释放火焰，吸收能量</p>
+                <p>身份；RWBY队员，弗纳人(Faunus)，原"白牙"组织成员</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('.carousel').carousel({
+                interval:2000,
+                wrap:true
+            })
+        })
+    </script>
+
+    <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<!-- ==== ABOUT ==== -->
+        <div class="container" id="about" name="about">
+            <div class="row white">
+            <br>
+                <h1 class="centered">《RWBY》</h1>
+                <hr>
+
+                <div class="col-lg-6">
+                    <p>《RWBY》(发音同Ruby)是一部在2013年7月播出的原创网络动画。R、W、B、Y 分别是英语红白黑黄的首字母，代表的分别是四位女主角的主题色。
+
+由美国Rooster Teeth Productions(公鸡牙齿)动画工作室RWBY团队制作，原作者兼前导演为已故动画家Monty Oum(蒙特·乌姆)。</p>
+                </div><!-- col-lg-6 -->
+
+                <div class="col-lg-6">
+                    <p>本作的背景设定在类现代但是充满着超自然力量的世界。主要角色为四个拥有各自的特殊能力(外像力)及武器的女孩:一个是少年英雄，一个是尊贵的女继承人，一个是迷惘的侠盗，一个是派对女孩。她们因各种原因聚在一起组成"RWBY"小队并接受训练，一心致力于对抗肆意横行"树㎴子"(Remnant)奇幻世界的邪恶力量。在此之前，人类为了生存，发起了对戮兽(Grimm)的战争，直到他们发现"尘晶"(Dust)可以被用作魔力来源，这让人类得以对抗它们，并建立了文明世界。</p>
+                </div><!-- col-lg-6 -->
+            </div><!-- row -->
+        </div><!-- container -->
+
+        <!-- ==== SECTION DIVIDER1 -->
+        <section class="section-divider textdivider divider3" style="background:url('http://imgsrc.baidu.com/forum/pic/item/40304f1f95cad1c829c298d67e3e6709c83d5140.jpg');">
+            <div class="container">
+                <h1>四色战记</h1>
+                <hr>
+                <p>原作:Monty Oum
+
+导演:Monty Oum
+
+编剧:Monty Oum
+
+剧本:Monty Oum
+
+出品人:Monty Oum</p>
+            </div><!-- container -->
+        </section><!-- section -->    
+<br/>
+<br/>
+    <!-- ==== SERVICES ==== -->
+        <div class="container" id="services" name="services">
+            <div class="row">
+                <h2 class="centered">简评</h2>
+                <hr style="color: #333333;">
+                <br>
+                <div class="col-lg-offset-2 col-lg-8">
+                    <p>RWBY是一部试图向日漫致敬却又不流于日漫的美国动漫。</p>
+                    <p>美国时间2014年3月31日被网络电视国际学院(International Academy of Web Television，IAWTV)评为2014年全美最佳电视动画连续剧。
+                    </p>
+                    <p>美国时间2014年9月6日荣获Dick Clark Productions(迪克·克拉克工作室)和Tubefilter公司联合颁发的2014年度Streamy Awards(河流奖)。</p>
+                </div><!-- col-lg -->
+            </div><!-- row -->
+
+            <div class="row">
+                <h2 class="centered">网评摘录</h2>
+                <hr>
+                <br>
+                <div class="col-lg-offset-2 col-lg-8">
+
+                    <p>觉得这片子最大的意义还是揭露了这样一个事实，或者说我认为抽了大部分国产动漫一个响亮的耳光：</p>
+                    <p>一部动漫甚至包括其他影视，质量其实和金钱成本并不是必然挂钩的。RWBY在有限的经费下，制作上就懂得该详则详，该略则略；突出主体人设，聚焦动作设计，背景艺术风格化，剧情设定与对白台词也并不敷衍了事。其导演也是华裔/亚裔的优秀人才，擅于设计人物打斗动作。
+                    </p>
+                    <p>设计做不好，故事讲不好，审美素养跟不上，没有哪怕一点点创造意识，把动漫等同于忽悠小朋友的“卡通”又或者是说教工具，砸再多钱也只能做出一盘翔，优酷的国产动漫频道已经有太多这样的“一点也不有趣”的奇葩。</p>
+                    <p>不要再把做不出好作品归结于“投资少缺钱”又或是“审查”这样的借口上了。题材也不是只有照搬三国、历史、名著、或者各种小动物。RWBY就是这样一部“好看的”“有趣的”“很酷的”“非TV播映的”网络放送动画。</p>
+                        <br>
+                            <br>
+                                <br>
+                    <img class="img-responsive; text-align:center;" src="https://imgsa.baidu.com/forum/pic/item/584a5e9b033b5bb575a7d41c36d3d539b700bc5b.jpg?v=tbs" alt="">
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- container -->
+
+
+<div id="rwby" style="margin-top:100px;height:370px;width:1160;">   
+  <img src="https://i0.hdslb.com/bfs/archive/33e8f7026b6fff11e0368a83ed76a0106c210f50.jpg">
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<!-- ==== TEAM MEMBERS ==== -->
+        <div class="container" id="other" name="other">
+        <br>
+            <div class="row white centered">
+                <h1 class="centered">其他人物</h1></div>
+                </div>  
+
+<div class="col-lg-3 centered">
+                    <div>
+    <img style="width:300px;height:425px;" src="https://imgsa.baidu.com/forum/pic/item/c28529166d224f4a1b8565040bf790529822d103.jpg">
+    </div>
+                    <br>
+                    <h4><b>Pyrrha Nikos</b></h4>
+                    <p>信标学院(Beacon)的学生，为"JNPR"(发音同Juniper，意为杜松)队的队员，拥有艳红色马尾、翡翠绿色眼影和瞳仁的少女。性格成熟冷静、善良正直。</p>
+                    <p>Pyrrha拿着一把融合带瞄准镜的来复枪、标枪、剑，名为"倾诉(Miló)"的细长型武器，以及一个名为"聆听(Akoúo)"的希腊风格的圆形金属盾牌，既可防御又可作为武器投掷。平时Pyrrha将武器收纳在背上。</p>
+                </div><!-- col-lg-3 -->
+
+                <div class="col-lg-3 centered">
+                     <div>
+                         <img style="width:300px;height:425px;" src="https://imgsa.baidu.com/forum/pic/item/4384e88ba61ea8d349156213950a304e251f5874.jpg"></div>
+                    <br>
+                    <h4><b>Jaune Arc</b></h4>
+                    <p>信标学院(Beacon)的学生，为"JNPR"(发音同Juniper，意为杜松)队的队长。金色短发和蓝色双眸的瘦高青年男子。性格略懦弱内向，多次出糗。非常善良热心。</p>
+                    <p>Jaune的武器是名为Crocea Mors(黄之死亡)的剑与鞘盾的组合，是其曾参加过伟大战争(The Great War)的高祖父传下来的装备，盾牌上印有Jaune的个人纹章，能够折叠成剑鞘。暂时看来并无配备使用尘晶(Dust)的部件，但或许具有强大的力量。</p>
+                </div><!-- col-lg-3 -->
+
+                <div class="col-lg-3 centered">
+                    <div>
+                         <img style="width:300px;height:425px;" src="https://imgsa.baidu.com/forum/pic/item/06772136acaf2edddad35ffe8f1001e939019301.jpg"></div>
+                    <br>
+                    <h4><b>Nora Valkyrie</b></h4>
+                 <p>信标学院(Beacon)学生，JNPR(发音同Juniper，意为杜松)队员之一。橘色短发的少女，碧蓝色双眸，一身运动风格的上衣和粉红色短裙，上身有金属材质护甲，双臂戴白色护臂，双手戴粉色露指手套。脚穿白色短靴。Nora性格活泼，好动不休，开朗健谈，体力非常充沛，是个在战斗中也能随时保持开心和找到乐趣的超天然开朗少女。</p>
+                    <p>Nora的武器名为"神威战锤(Magnhild)"，是一把能够转换成类似于中世纪欧洲的双手长柄T形战锤的六连发枪榴弹发射器，两种形态都是重武器，平时背在背上。</p>
+                </div><!-- col-lg-3 -->
+
+                <div class="col-lg-3 centered">
+                    <div>
+                         <img style="width:300px;height:425px;" src="https://imgsa.baidu.com/forum/pic/item/58467530e924b899b70b6f2f6c061d950a7bf674.jpg"></div>
+                    <br>
+                    <h4><b>Lie Ren</b></h4>
+                    <p>信标学院(Beacon)的学生，为"JNPR"(发音同Juniper，意为杜松)队的队员。一位有着中国特色的瘦削少年，特征是穿着墨绿色黑边长摆有中国清代长袍马褂风格的服装和白色长裤，鞋为黑色。性格冷静细腻、平和低调。</p>
+                    <p>Lie Ren拿着一对搭配刀刃的草绿色冲锋手枪"风暴之花(Storm Flower)"，可以折叠变形后收纳在其袖子里。射程很短，仅仅适用于近距离交火，而且穿透性能相当低;但是射速相当高，达到了1100RPM，仅次于Blake Belladonna的武器"跃影飞绫"。</p>
+                </div><!-- col-lg-3 -->
+
+            </div><!-- row -->
+        </div><!-- container -->
+
+<div class="container" id="other" name="other">
+        <br>
+            <div class="row white centered">
+                <h1 class="centered"></h1></div>
+                </div>  
+<!-- ==== SECTION DIVIDER3 -->
+        <section class="section-divider textdivider divider3" style="background:url('http://imgsrc.baidu.com/forum/pic/item/40304f1f95cad1c829c298d67e3e6709c83d5140.jpg');">
+            <div class="container">
+                <h1>资源导航</h1>
+                <hr>
+                <p>片段集锦/美图搬运</p>
+            </div><!-- container -->
+        </section><!-- section -->
+
+
+<!--九宫格///基本网格结构-->
+<div class="container">               
+   <div class="row"> 
+   <div class="col-lg-3 centered"
+    style="margin-top: 20px;margin-left:60px;">
+    <table>
+       <tr>
+         <td width="300" height="100" style="padding-top:10px;font:16px 华文新魏;background-color: rgba(255,255,255,0.5);">“Penny，你的时代会来临的。”</td>
+
+         <div class=".col-xs-6 .col-md-4"
+    style="margin-top: 20px;margin-left:30px;">
+         <td><img style="width:380px;height:240px;"  src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D95%2C0%2C1089%2C719%3Bc0%3Dbaike150%2C5%2C5%2C150%2C50/sign=b5eb667b133853439880dd61ae2a8552/1c950a7b02087bf48a10c2fef1d3572c11dfcf2d.jpg"></td>
+         <td width="300" height="100" style="padding-top:10px;font:16px 华文新魏;background-color: rgba(255,255,255,0.5);">“我希望你明白今夜你的行动不会被轻易饶恕，小女孩，你把自己和他人都卷入了危险之中！”</td>
+      </tr>
+
+<div class="col-lg-3 centered"
+    style="margin-top: 20px;margin-left:30px;">
+      <tr>
+      <div class=".col-xs-6 .col-md-4"
+    style="margin-top: 20px;margin-left:30px;">
+         <td><img style="width:380px;height:240px;" src="https://imgsa.baidu.com/forum/w%3D580/sign=a6440d5e7cf0f736d8fe4c093a55b382/b99548177f3e6709c41d7ede3fc79f3df8dc5580.jpg"></td>
+         <td width="300" height="100" style="padding-top:10px;font:16px 华文新魏;background-color: rgba(255,255,255,0.5);"><p>“刻薄的目光要求我们变得整齐、划一且服从。但每片残缺的火花所隐藏的美，都更甚于它将受到的评价。”</p>
+         </td>
+         <div class=".col-xs-6 .col-md-4"
+    style="margin-top: 20px;margin-left:30px;">
+         <td><img style="width:380px;height:240px;" src="https://imgsa.baidu.com/forum/w%3D580/sign=8988cc1083025aafd3327ec3cbecab8d/038ee8025aafa40f1360440daa64034f79f0193e.jpg"></td>
+      </tr>
+
+<div class="col-lg-3 centered"
+    style="margin-top: 20px;margin-left:30px;">
+      <tr>
+         <td width="300" height="100" style="padding-top:10px;font:16px 华文新魏;background-color: rgba(255,255,255,0.5);">“哦！我简直无法相信我的小妹妹要跟我一起去Beacon了！今天真是值得庆祝！”</td>
+         <td><img style="width:380px;height:240px;" src="https://p1.ssl.qhmsg.com/t0162234543cdf7b916.png"></td>
+         <td width="300" height="100" style="padding-top:10px;font:16px 华文新魏;background-color: rgba(255,255,255,0.5);"><p>“这些小毛孩们真是越来越不科学了。”</td>
+      </tr>
+
+    </table>
+</div>  
+
+<hr style="color: black;width:1160px; position: relative; top: 50px;">
+</div>
+
+<!-- ================ -->
+        <div class="section">
+            <div class="container">
+                <h1 class="text-center title" id="portfolio">GIF图集</h1>
+                <div class="separator"></div>
+                <p>每一个都要有！！！<br> 怎...么可能?全是私心！</p>
+                <br>            
+                <div class="row object-non-visible" data-animation-effect="fadeIn">
+                    <div class="col-md-12">
+
+                        <!-- isotope filters start -->
+                        <div class="filters text-center">
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#" data-filter="*">All</a></li>
+                                <li><a href="#.颜表立" data-filter=".颜表立">颜表立</a></li>
+                                <li><a href="#.完美降落" data-filter=".完美降落">完美降落</a></li>
+                                <li><a href="#.对战" data-filter=".对战">对战</a></li>
+                                <li><a href="#.日常" data-filter=".日常">日常</a></li>
+                            </ul>
+                        </div>
+                        <!-- isotope filters end -->
+
+                        <!-- portfolio items start -->
+                        <div class="isotope-container row grid-space-20">
+                            <div class="col-sm-6 col-md-3 isotope-item 颜表立">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=9acddc39f3d3572c66e29cd4ba126352/12a798d3572c11df39f034f3622762d0f603c2b8.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-1">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>颜表立</span>
+                                        </a>  
+                                    </div>                         
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
+                                  <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-1-label">rwby</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3>Ruby Rose 小红</h3>
+                                                <div class="row">
+                                                   <div class="col-md-6">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/727611f40ad162d99a8db66912dfa9ec8b13cde7.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-3 isotope-item 完美降落">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=33d0964aa6c27d1ea5263bcc2bd7adaf/f7eacec27d1ed21be91b0a0baf6eddc453da3f88.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-2">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>完美降落</span>
+                                        </a>
+                                    </div>                            
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-2" tabindex="-1" role="dialog" aria-labelledby="project-2-label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                           <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>  
+                                          <h4 class="modal-title" id="project-2-label">rwby</h4>    
+                                            </div>
+                                              <div class="modal-body">
+                                                <h3>RWBY</h3>
+                                                <div class="row">
+                                                   <div class="col-md-6 text-align:center;">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/7a2bd919ebc4b7458c93d023ccfc1e178a82157a.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>                    
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-3 isotope-item 颜表立">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=60cfe9cc10dfa9ecfd2e561f52d1f754/27527bdfa9ec8a13f13bdc30f603918fa1ecc0b8.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-3">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>颜表立</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-3" tabindex="-1" role="dialog" aria-labelledby="project-3-label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-3-label">rwby</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3>Weiss Schnee 小白</h3>
+                                                <div class="row">
+                                                    <div class="col-md-6">                                            
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/3a9344738bd4b31cd27a40ce84d6277f9f2ff884.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-3 isotope-item 对战">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=a17bda055366d0167e199e20a729d498/c6833866d016092433b8fbd3d50735fae4cd34d3.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-4">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>对战</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-4" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-4-label">武器：Magnhild（神威战锤 ）</h4>
+                                            </div>
+                                        <div class="modal-body">
+                                                <h3>Nora Valkyrie</h3>
+                                                <div class="row">
+                                                     <div class="col-md-6">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/f1b553dbb6fd52662fb80b39a918972bd507368e.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+
+                        <div class="isotope-container row grid-space-20">
+                            <div class="col-sm-6 col-md-3 isotope-item 日常">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=d72b9e4fa50f4bfb8cd09e5c334e788f/2ad1ce0f4bfbfbedfe4dc7af79f0f736aec31f4c.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-1">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>日常</span>
+                                        </a>  
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
+                                  <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-1-label">rwby</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3>Ruby Rose 小红</h3>
+                                                <div class="row">
+                                                   <div class="col-md-6">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/727611f40ad162d99a8db66912dfa9ec8b13cde7.jpg" alt="">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-3 isotope-item 对战">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=97f1c3c50cf41bd5da53e8fc61d881a0/a26564f41bd5ad6e372b400483cb39dbb4fd3c88.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-5">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>对战</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-5" tabindex="-1" role="dialog" aria-labelledby="project-5-label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-5-label">White Fang（白牙）</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3>由弗纳人组成的专属人权团体</h3>
+                                                <div class="row">
+                                                     <div class="col-md-6">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/6a323b0fd9f9d72af207c468d72a2834359bbbe7.jpg" alt="">
+                                                    </div>                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-3 isotope-item 颜表立">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=713984133b87e9504217f3642039531b/4a8d5087e950352a0165aed85243fbf2b3118b5d.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-6">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>颜表立</span>
+                                        </a>
+                                   </div>
+                                </div>  
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-6" tabindex="-1" role="dialog" aria-labelledby="project-6-label" aria-hidden="true">
+                                  <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-6-label">ruby</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3>Blake Belladonna 小黑</h3>
+                                                <div class="row">
+                                                     <div class="col-md-6">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/65b05cd3d539b600a489dbc2ea50352ac75cb7fb.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-3 isotope-item 对战">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=6f7bb51c7f1ed21b79c92eed9d6cddae/d4bc171ed21b0ef4f33abcb0dfc451da83cb3e88.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-7">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>对战</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-7" tabindex="-1" role="dialog" aria-labelledby="project-7-label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-7-label">武器：Miló&Akoúo̱（倾诉与聆听）</h4>
+                                            </div>
+                                       <div class="modal-body">
+                                                <h3>Pyrrha Nikos</h3>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/1b1d9c246b600c33ce19ce58184c510fd8f9a1b8.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+
+
+                            <div class="col-sm-6 col-md-3 isotope-item 颜表立">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=85c3170c8b13632715edc23ba18ea056/d992e013632762d0631f2f6fa1ec08fa503dc6b8.jpg" alt="">
+                                       <a class="overlay" data-toggle="modal" data-target="#project-8">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>颜表立</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-8" tabindex="-1" role="dialog" aria-labelledby="project-8-label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-8-label">rwby</h4>
+                                            </div>
+                                      <div class="modal-body">
+                                                <h3>Yang Xiao long 小黄</h3>
+                                                <div class="row">
+                                                  <div class="col-md-6">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/1cffea0a19d8bc3e4168d2bf818ba61ea9d345e6.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-3 isotope-item 对战">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=8490605bca1349547e1ee86c664f92dd/fdcfa11349540923071bbba49358d109b2de497d.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-9">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>对战</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-9" tabindex="-1" role="dialog" aria-labelledby="project-9-label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-9-label">rwby</h4>
+                                            </div>
+                                          <div class="modal-body">
+                                                <h3>嘤嘤嘤 哼哼哼</h3>
+                                                <div class="row">
+                                                     <div class="col-md-6">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/0bf7f4510fb30f24b090c039cb95d143ad4b0304.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-3 isotope-item 完美降落">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=08ccf56041a98226b8c12b2fba82b97a/c73b29a98226cffcfd1fc8a7bb014a90f603ea69.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-10">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>完美降落</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-10" tabindex="-1" role="dialog" aria-labelledby="project-10-label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-10-label">Sun Wukong / 孙悟空</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h3>猴哥同人~</h3>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/154666d7912397dd8bd3cb945b82b2b7d1a28772.jpg" alt="">
+                                                    </div>                                               
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-3 isotope-item 完美降落">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=c8c6bcee0824ab18e016e13f05f8e69a/a0686324ab18972b4ea75902e7cd7b899c510ad3.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-11">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>完美降落</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-11" tabindex="-1" role="dialog" aria-labelledby="project-11-label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-11-label">Blake</h4>
+                                            </div>
+                                          <div class="modal-body">
+                                                <h3>Blake同人~</h3>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/1b1d9c246b600c337f349fa71e4c510fd8f9a18b.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-3 isotope-item 对战">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=ff589301aa64034f0fcdc20e9fc17980/8b93c164034f78f04395c72f78310a55b1191cca.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-12">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>对战</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-12" tabindex="-1" role="dialog" aria-labelledby="project-12-label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-12-label">yang</h4>
+                                            </div>
+                                           <div class="modal-body">
+                                                <h3>看拳~</h3>
+                                                <div class="row">
+                                                     <div class="col-md-6">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/2bcba3ea15ce36d3d7c4ccc23ef33a87eb50b1fa.jpg" alt="">
+                                                    </div>                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-3 isotope-item 日常">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=731cd0c6b03533faf5b6932698d1fdca/cc40db3533fa828bccdac42bfc1f4134950a5aff.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-13">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>日常</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-13" tabindex="-1" role="dialog" aria-labelledby="project-13-label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-13-label">pyrrha</h4>
+                                            </div>
+                                          <div class="modal-body">
+                                                <h3>超喜欢p姐嗒</h3>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/584a5e9b033b5bb59f15300134d3d539b400bc89.jpg" alt="">
+                                                    </div>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-3 isotope-item 日常">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="http://imgsrc.baidu.com/forum/pic/item/fdcfa11349540923840c3b6a9058d109b3de493f.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-14">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>日常</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-14" tabindex="-1" role="dialog" aria-labelledby="project-14-label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-14-label">penny</h4>
+                                            </div>
+                                          <div class="modal-body">
+                                                <h3>萌萌的penny</h3>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/a51cef35e5dde71113425d71a5efce1b9c166127.jpg" alt="">
+                                                    </div>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+
+                            <div class="col-sm-6 col-md-3 isotope-item 完美降落">
+                                <div class="image-box">
+                                    <div class="overlay-container">
+                                        <img src="https://imgsa.baidu.com/forum/w%3D580/sign=cf661fc4f11986184147ef8c7aec2e69/c02f92198618367aa6c9e57827738bd4b21ce556.jpg" alt="">
+                                        <a class="overlay" data-toggle="modal" data-target="#project-15">
+                                            <i class="fa fa-search-plus"></i>
+                                            <span>完美降落</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="project-15" tabindex="-1" role="dialog" aria-labelledby="project-15-label" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="project-15-label">penny</h4>
+                                            </div>
+                                          <div class="modal-body">
+                                                <h3>飞剑超酷！</h3>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="https://imgsa.baidu.com/forum/pic/item/4604b0b44aed2e736ec9e3818501a18b86d6fafe.jpg" alt="">
+                                                    </div>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+                            </div>
+                        </div>
+                        <!-- portfolio items end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section end -->
+<br/>
+<br/>
+<br/>
+<br/>
+<hr style="color: black;width:1160px; position: relative; top: 50px;">
+
+ <div class="container" id="video" name="video">
+        <br>
+            <div class="row white centered">
+                <h1 class="centered">在线视频</h1></div>
+                </div>  
+
+<div class="centered">
+                    <div>
+<br><br>【bilibili】bilibili RWBY BRB字幕<br>①第一季第一卷<br>【720P 分集】第一卷+预告片+访谈：<br>
+<a href="http://jump2.bdimg.com/safecheck/index?url=x+Z5mMbGPAsY/M/Q/im9DRU0hTF/EKDkAsoNF5CkZSuBC8h5fCQMdVGSWjxyoSdyN2J0xGM5Zd95sWoozHex5XMCpbjNms+xkBq6RyY74GLBPepJf4Ta6mH/dWG5bA7t1p6SbJxOnbN2Pah4egTNMg=="  target="_blank">http://www.bilibili.tv/video/av833961/</a>
+<br>【BDRIP 整合】RWBY Volume1 第一卷预告片+正片：<br>
+<a href="http://jump2.bdimg.com/safecheck/index?url=x+Z5mMbGPAsY/M/Q/im9DRU0hTF/EKDkAsoNF5CkZSuBC8h5fCQMdXBf9fRSekTIM3i5lp6ErGl5sWoozHex5XMCpbjNms+xkBq6RyY74GLBPepJf4Ta6mH/dWG5bA7t1p6SbJxOnbN2Pah4egTNMg=="  target="_blank">http://www.bilibili.tv/video/av852870/</a>
+<br>第一季第二卷<br>
+【BD1080P】RWBY Volume2<br>
+<a href="http://jump2.bdimg.com/safecheck/index?url=x+Z5mMbGPAsY/M/Q/im9DRU0hTF/EKDkaAmYzSFmIdQiDD7jlZmpdYcZgX0isTwoV6ktPr2PAtt5sWoozHex5XMCpbjNms+xkBq6RyY74GLBPepJf4Ta6mH/dWG5bA7t1p6SbJxOnbN2Pah4egTNMg=="  target="_blank">http://www.bilibili.com/video/av1864625</a>
+<br>②第二季合集<br>
+【BRB】RWBY 第二季 1080P合集<br>
+<a href="http://www.bilibili.com/video/av1712943/"  target="_blank">http://www.bilibili.com/video/av1712943/</a>
+<br>③第三季合集<br>
+【傲娇零】RWBY 第三季<br>
+<a href="http://bangumi.bilibili.com/anime/2894/"  target="_blank">http://bangumi.bilibili.com/anime/2894/</a>
+<br>RWBY第三季酷炫战斗动作集锦<br>
+"偷偷来一发动作戏~ ~"<br>
+<a href="http://www.bilibili.com/video/av8433454/"  target="_blank">http://www.bilibili.com/video/av8433454/</a>
+<br>④第四季合集<br>
+【傲娇零】RWBY 第四季<br>
+<a href="http://bangumi.bilibili.com/anime/5636/"  target="_blank">http://bangumi.bilibili.com/anime/5636/</a>
+<br>⑤第五季第一集<br>
+【傲娇零】RWBY 第五季 01（10月）<br>
+<a href="http://www.bilibili.com/video/av15414175/?from=search&seid=15936211142624506588"  target="_blank">http://www.bilibili.com/video/av15414175/?from=search&seid=15936211142624506588</a>
+<br>
+</div></div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+     <!--分割线模块-->
+<div style="width:1000px;height:50px;padding-top:20px;padding-bottom:10px;text-align:right"> 
+     <i>想了解我，请关注：<a href="http://weibo.com/5214061060/profile?topnav=1&wvr=6">外星球肥皂</a></i>
+     </div>
+    </div> 
+
+<!--留言板模块-->
+   <div style="text-align:center">
+   <br/>
+    <hr style="color:#eeeeee;border-width:1px;border-color:#eeeeee;background-color:#eeeeee;margin-top:20px;margin-bottom:20px;">
+     <div style="text-align:center;font-size:20px;color:black;">
+    留言板：
+      </div>
+</style> 
+       <textarea id="content" cols="100" rows="5">输入你想说的话</textarea>
+   <br> <button id="submit">确定发送</button>              <p style="text-align:center">你的留言：</p>
+<div id="message"></div>                       
+
+   <!--留言反馈模块-->
+ <script type="text/javascript">
+    var submit=document.getElementById("submit");
+    submit.onclick=function(){    
+        var content_element=document.getElementById("content");
+        var content=content_element.value;
+        var message_element=document.getElementById("message");
+        var message=message_element.innerHTML;
+        message=message+content+"</p>";
+        message=message+"<hr>";
+        message_element.innerHTML=message;        
+    }
+    </script>
+    </div>
+<br/>
+<br/>
+
+</body>
+</html></body><script type="text/javascript"></script></html>
